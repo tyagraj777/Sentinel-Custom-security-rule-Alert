@@ -3,6 +3,7 @@ how to create a project for defining a custom security rule using Sentinel and t
 
 #Sample Directory structure
 custom-security-rule/
+
 ├── main.tf           # Main Terraform configuration
 
 ├── variables.tf      # Variable definitions
