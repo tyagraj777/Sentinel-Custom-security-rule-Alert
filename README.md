@@ -3,18 +3,31 @@ how to create a project for defining a custom security rule using Sentinel and t
 
 
 
+# Custom Security Rule with Sentinel and Alerts
+
+## Overview
+This project creates a custom Sentinel security policy and sets up notifications for policy violations. It uses Terraform to automate the creation of the policy, Pub/Sub topic, and notification configuration.
+
 ---
 
-### Testing and Validation
+## Features
+- **Custom Sentinel Policy:** Detect unusual VM activity (e.g., unauthorized region deployments).
+- **Alerting:** Pub/Sub-based notification for violations.
+- **Integration Ready:** Designed for easy integration with SIEM systems.
 
-1. **Deploy the Terraform Code**
-   - Follow the instructions in the **README.md** file to deploy the Terraform code.
+---
 
-2. **Simulate Violations**
-   - Deploy a GCE instance in a non-allowed region to simulate unusual VM activity.
+## Prerequisites
+1. **Google Cloud Project and Organization**: Ensure you have access to a GCP project and organization.
+2. **Terraform Installed**: Install Terraform from [Terraform.io](https://www.terraform.io/downloads).
 
-3. **Validate Alerts**
-   - Check the Pub/Sub topic for alerts.
-   - Confirm alerts are routed to your SIEM if integrated.
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd custom-security-rule
 
 
