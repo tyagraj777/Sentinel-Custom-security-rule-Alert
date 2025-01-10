@@ -45,3 +45,55 @@ git clone <repository-url>
 cd custom-security-rule
 
 
+Testing Considerations**
+
+
+Test the Policy
+
+-Deploy a VM instance in a non-allowed region using the GCP Console or CLI.
+
+-Check the Security Command Center for findings and verify that the policy is triggered.
+
+
+Test the Notification
+
+-Verify that a message is published to the Pub/Sub topic when the policy is violated.
+
+-Consume the Pub/Sub topic using a subscriber or integrate with a SIEM system.
+
+
+Security Considerations
+
+1. Policy Validation: Test policies thoroughly to avoid false positives or negatives.
+
+2. Access Control: Restrict access to the Pub/Sub topic to necessary systems or accounts.
+
+3. Regular Updates: Review and update policies to address evolving threats.
+
+
+Outputs
+
+1. Pub/Sub Topic: Topic name for notifications.
+
+2. Custom Policy Name: Name of the custom security policy.
+
+
+Troubleshooting
+
+1. No Findings Triggered:
+
+-Ensure the policy logic matches the resource configuration.
+
+-Verify logs for relevant actions.
+
+
+2. Notifications Not Delivered:
+
+-Check Pub/Sub permissions for the notification config.
+
+-Ensure the Pub/Sub topic exists and is active.
+
+
+
+
+
