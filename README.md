@@ -1,7 +1,13 @@
 # Sentinel-Custom-security-rule-Alert
 how to create a project for defining a custom security rule using Sentinel and triggering an alert when the rule is violated
 
-
+#Sample Directory structure
+custom-security-rule/
+├── main.tf           # Main Terraform configuration
+├── variables.tf      # Variable definitions
+├── outputs.tf        # Outputs for resources created
+├── terraform.tfvars  # Variable values
+├── README.md         # Documentation for setup and integration
 
 # Custom Security Rule with Sentinel and Alerts
 
