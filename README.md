@@ -9,6 +9,7 @@ custom-security-rule/
 ├── terraform.tfvars  # Variable values
 ├── README.md         # Documentation for setup and integration
 
+
 # Custom Security Rule with Sentinel and Alerts
 
 ## Overview
